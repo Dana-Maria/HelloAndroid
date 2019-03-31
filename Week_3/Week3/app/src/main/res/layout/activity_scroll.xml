@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/Marime"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/Marime60"
+                android:layout_height="@dimen/Marime60"
+                android:background="@android:color/holo_red_light" />
+
+            <TextView
+                android:layout_width="@dimen/Marime80"
+                android:layout_height="@dimen/Marime60"
+
+                />
+
+            <TextView
+                android:layout_width="@dimen/Marime60"
+                android:layout_height="@dimen/Marime60"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="@dimen/Marime60"
+                android:layout_height="@dimen/Marime60"
+                android:background="@android:color/holo_orange_light" />
+
+            <TextView
+                android:layout_width="@dimen/Marime"
+                android:layout_height="@dimen/Marime60"
+
+                />
+
+            <TextView
+                android:layout_width="@dimen/Marime60"
+                android:layout_height="@dimen/Marime60"
+                android:background="@android:color/holo_green_light" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/untextbelea"
+            />
+
+    </LinearLayout>
+
+
+</ScrollView>

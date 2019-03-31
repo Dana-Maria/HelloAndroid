@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      >
+
+    <TextView
+        android:layout_width="@dimen/Marime350"
+        android:layout_height="@dimen/Marime140"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_light"
+        />
+
+      <TextView
+          android:layout_width="@dimen/Marime300"
+          android:layout_height="@dimen/Marime100"
+          android:background="@android:color/holo_orange_light"
+          android:layout_gravity="center"
+          />
+      <TextView
+          android:layout_width="@dimen/Marime250"
+          android:layout_height="@dimen/Marime60"
+          android:layout_gravity="center"
+          android:background="@android:color/holo_red_light"
+          />
+
+  </FrameLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

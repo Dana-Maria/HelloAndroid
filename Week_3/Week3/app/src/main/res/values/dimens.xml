@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Marime120">120dip</dimen>
+    <dimen name="Marime100">100dip</dimen>
+    <dimen name="Marime140">140dip</dimen>
+    <dimen name="Marime300">300dip</dimen>
+    <dimen name="Marime60">60dip</dimen>
+    <dimen name="Marime200">200dip</dimen>
+    <dimen name="Marime350">350dip</dimen>
+    <dimen name="Marime320">320dip</dimen>
+    <dimen name="Marime250">250dip</dimen>
+    <dimen name="Marime150">150dip</dimen>
+    <dimen name="Marime">30dip</dimen>
+    <dimen name="Marime80">80dip</dimen>
+</resources>

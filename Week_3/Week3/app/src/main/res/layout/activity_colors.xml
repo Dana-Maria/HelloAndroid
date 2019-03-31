@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Colors">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/Marime120"
+            android:layout_height="@dimen/Marime60"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:layout_width="@dimen/Marime300"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_green_dark"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        
+        <TextView
+            android:layout_width="@dimen/Marime200"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_red_dark"
+            />
+        <FrameLayout
+            android:layout_width="@dimen/Marime250"
+            android:layout_height="@dimen/Marime60">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_light"
+                />
+            <TextView
+                android:layout_width="@dimen/Marime"
+                android:layout_height="@dimen/Marime"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/Marime100"
+                android:background="@color/colorPrimaryDark"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/Marime300"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_green_dark"
+            />
+
+        <TextView
+            android:layout_width="@dimen/Marime120"
+            android:layout_height="@dimen/Marime60"
+            android:background="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Marime60">
+
+        <TextView
+            android:layout_width="@dimen/Marime100"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_blue_bright"
+            />
+
+        <FrameLayout
+            android:layout_width="@dimen/Marime100"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_blue_dark"
+            >
+
+            <TextView
+                android:layout_width="@dimen/Marime"
+                android:layout_height="@dimen/Marime"
+                android:background="@android:color/white"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="@dimen/Marime60"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_red_light"
+            />
+
+        <TextView
+            android:layout_width="@dimen/Marime80"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_blue_bright"
+            />
+
+        <TextView
+            android:layout_width="@dimen/Marime80"
+            android:layout_height="@dimen/Marime60"
+            android:background="@android:color/holo_orange_light"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
