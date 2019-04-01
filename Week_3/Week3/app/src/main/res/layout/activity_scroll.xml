@@ -6,14 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ScrollActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         >
 
         <LinearLayout
-
+            android:id="@+id/ColorsLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -56,6 +55,8 @@
         </LinearLayout>
 
         <TextView
+            android:layout_below="@+id/ColorsLayout"
+            android:layout_marginTop="@dimen/Marime"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:textSize="30sp"
@@ -64,7 +65,7 @@
             android:id="@+id/untextbelea"
             />
 
-    </LinearLayout>
+    </RelativeLayout>
 
 
 </ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LoginActivity</string>
+    <string name="login">login</string>
+    <string name="email_me">email_me</string>
+    <string name="i_accept_terms_and_condition">i_accept_terms_and_condition</string>
+    <string name="i_accept_terms_and_conditions">I accept terms and conditions</string>
+    <string name="email">Email</string>
+    <string name="login_">Login</string>
+</resources>
