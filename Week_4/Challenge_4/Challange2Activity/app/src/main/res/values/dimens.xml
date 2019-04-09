@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marime_300">300dip</dimen>
+    <dimen name="marime_350">350dip</dimen>
+</resources>

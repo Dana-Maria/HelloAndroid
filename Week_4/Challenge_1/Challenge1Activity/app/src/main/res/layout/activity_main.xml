@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/YellowPai"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/android_1" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/android_2"
+
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+            <TextView
+                android:layout_width="420dp"
+                android:layout_height="590dp"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_orange_dark" />
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="540dp"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_orange_light" />
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:background="@color/Yellow" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/android_3" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</>
