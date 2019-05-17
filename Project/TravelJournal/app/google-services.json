@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "985702534152",
+    "firebase_url": "https://traveljournal-a470c.firebaseio.com",
+    "project_id": "traveljournal-a470c",
+    "storage_bucket": "traveljournal-a470c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:985702534152:android:de4f13b6acaf0f2f",
+        "android_client_info": {
+          "package_name": "com.danamaria.traveljournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "985702534152-8l3c0adbdmdeat689ek0v00fegb41asc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.danamaria.traveljournal",
+            "certificate_hash": "d44e6c1d960bc6cec7a206c543bd783b50c19280"
+          }
+        },
+        {
+          "client_id": "985702534152-od4l239t409knrmbf2dt54c8ii2at3cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHZ6s_F_e0E1aLOEAUCxctbbCvWI8s9-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "985702534152-od4l239t409knrmbf2dt54c8ii2at3cr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
