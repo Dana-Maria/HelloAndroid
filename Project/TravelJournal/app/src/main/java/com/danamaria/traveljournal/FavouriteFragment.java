@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FavouriteFragment extends Fragment {
+public class FavouriteFragment extends BaseFragment {
 
 
     public FavouriteFragment() {

@@ -1,12 +1,9 @@
 package com.danamaria.traveljournal;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 import android.support.v4.view.GravityCompat;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
@@ -16,6 +13,11 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.widget.TextView;
+
+import com.danamaria.traveljournal.home.HomeFragment;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -29,20 +31,27 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initDrawer();
+        //setMenuUserEmail();
+        initHomeFragment();
+    }
+
+    private void initHomeFragment() {
+        Fragment currentFragment = getSupportFragmentManager()
+                .findFragmentById(R.id.content_main);
+        if (!(currentFragment instanceof HomeFragment)) {
+            BaseFragment.addFragment(this,
+                    R.id.content_main,
+                    new HomeFragment());
+        }
+    }
+
+    private void initDrawer() {
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
 
         mToolbar = findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -51,14 +60,18 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+    }
 
-        Fragment currentFragment = getSupportFragmentManager()
-                .findFragmentById(R.id.content_main);
-        if (!(currentFragment instanceof HomeFragment)) {
-            BaseFragment.addFragment(this,
-                    R.id.content_main,
-                    new HomeFragment());
-        }
+    private void setMenuUserEmail() {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        String username = user.getDisplayName();
+        String email = user.getEmail();
+
+        TextView t1 = findViewById(R.id.nav_drawer_name_user);
+        TextView t2 = findViewById(R.id.nav_drawer_email);
+
+        t1.setText(username);
+        t2.setText(email);
     }
 
     @Override
